@@ -1,0 +1,25 @@
+@use "./../../scss/" as *;
+
+.item-list {
+  margin-bottom: 3rem;
+  .swiper-slide {
+    width: 24.35% !important;
+  
+    @include tablet {
+      width: 40% !important;
+    }
+  
+    @include mobile {
+      width: 80% !important;
+    }
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+
+}
+
+

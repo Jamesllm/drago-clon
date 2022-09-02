@@ -1,0 +1,18 @@
+@use "../../scss/" as *;
+
+.cardNotice {
+  background-color: $white;
+  padding: 1.2rem;
+  border-radius: $border-radius;
+  
+  .btn-success{
+    background-color: #28c76f;
+    color: $white;
+    padding: .5rem;
+    border-radius: $border-radius;
+  }
+
+  .center{
+    text-align: center;
+  }
+}

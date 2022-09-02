@@ -1,0 +1,26 @@
+@use "../../scss/" as *;
+
+.header__info {
+  padding: 1em;
+  @include flex(center, space-between);
+  @include tablet {
+    text-align: center;
+    flex-direction: column
+  }
+
+  .shop {
+    @include flex(center, center);
+    gap: 0.5em;
+
+    .icon {
+      background: green;
+      color: $white;
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      font-size: 1em;
+      line-height: 1em;
+      padding: 0.5em;
+    }
+  }
+}

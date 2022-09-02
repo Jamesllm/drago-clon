@@ -1,0 +1,29 @@
+@use "../../scss/variables" as *;
+
+footer {
+  background-color: $header-shrink;
+  color: $white;
+  padding: 1rem;
+  font-weight: 100;
+
+  hr {
+    border-color: $white;
+  }
+
+  .footerDrago {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+  .targets {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 5rem;
+      height: auto;
+    }
+  }
+}

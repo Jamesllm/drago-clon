@@ -1,0 +1,68 @@
+@use "../../scss/" as *;
+.categories {
+  position: relative;
+  width: 100%;
+  padding-top: 130%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s ease all;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+  &__title {
+    font-weight: 600;
+    line-height: 0.5em;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2em;
+    background-color: rgba(243, 235, 235, 0.767);
+    width: 100%;
+    color: $header-shrink;
+  }
+
+  &__collection {
+    color: $white;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      transition: width 0.5s ease;
+      height: 3px;
+      background-color: $header-shrink;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include overlay();
+    }
+
+    &:hover .categories__collection::after {
+      width: 100%;
+    }
+  }
+}

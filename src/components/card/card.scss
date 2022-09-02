@@ -1,0 +1,68 @@
+@use "../../scss/" as *;
+
+.item-card {
+  position: relative;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+  height: 90%;
+}
+
+.card-desc {
+  position: absolute;
+  top: 2%;
+  text-align: center;
+  padding: 0.375rem;
+  font-size: 0.875rem;
+  width: 4.375rem;
+  background-color: #fe2c55;
+  color: $white;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.card-stock {
+  position: absolute;
+  top: 75%;
+  right: .2%;
+  text-align: center;
+  background-color: $header-shrink;
+  color: $white;
+  border-radius: 8px 0px 0px 8px;
+  padding: 0.375rem;
+  font-size: 0.875rem;
+  width: 4.375rem;
+}
+
+.sin-stock{
+  text-align: center;
+  text-transform: uppercase;
+  color: $header-shrink;
+  font-weight: 500;
+  line-height: 0.5rem;
+  font-size: 1rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 1rem;
+  background-color: rgba(243, 235, 235, 0.767);
+  width: 100%;
+}
+
+.info-card {
+  text-transform: uppercase;
+  &__title {
+    font-size: 0.8rem;
+    color: #6e6b7b;
+  }
+  &__price-unit {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fe2c55;
+  }
+  &__price-real {
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    text-decoration: line-through;
+  }
+}

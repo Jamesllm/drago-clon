@@ -1,0 +1,51 @@
+@use "./../../scss/" as *;
+.modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34, 41, 47, 0.75);
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  &__dialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100vh;
+    z-index: 999;
+    background-color: $white;
+    color: $black;
+
+    .closeModal {
+      background-color: unset;
+      border: none;
+      position: absolute;
+      left: 4%;
+      top: 5px;
+      font-size: 1.5rem;
+    }
+
+    &__container {
+      margin-top: 1.5rem !important;
+      width: 90%;
+      margin: auto;
+      text-transform: uppercase;
+      color: $header-shrink;
+
+      .title {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+    }
+
+    @include mobile {
+      width: 25rem;
+    }
+  }
+}
+
+.modal-open {
+  display: block;
+}
