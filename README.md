@@ -79,13 +79,6 @@ Start the server
 - New animations 
 
 
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Body Color | #f0f0f0 |
-| Navbar Color |  rgb(12, 65, 145) |
-| Font Color | #f9f9fa|
 
 
 ## Demo
